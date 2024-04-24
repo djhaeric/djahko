@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxis communaux</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+       
+ 
+    </style>
+</head>
+<body>
+
+    <form action="recensement.php" method="post" >
+        <fieldset>
+            <legend><h1>recensement des taxis communaux</h1></legend>
+            <h2>À propos de vous</h2>  
+            <p>Télécharger ce document pour le remplissage de ce formulaire:<a href="7 outils ia pour résumer vos documents  (1).pdf" download=" 7 outils ia pour résumer vos documents  (1).pdf" 
+                target="_blank">Télécharger ici </a></p>
+            <label for="photo">Photo d'Identité</label>
+            <input type="file" accept="image" id="photo" name="image" required><br><br>
+            <label for="Identifiant">NOM ET PRENOMS:</label>
+            <br>
+            <input  class="width" type="text" name="nom_prenoms" id="Identifiant" placeholder="Nom et votre Prenoms" required>
+            <br><br><label for="contact">CONTACT:</label><br>
+            <input  class="width" type="text" name="contact" id="contact" placeholder="vote contact" required> <br>
+            <br><label for="date_naissance">DATE DE NAISSANCE:</label> <br>
+            <input  class="width" type="date" name="date_age" id="date_naissance" placeholder="vote date et lieu de naissance" required >
+            <br><br><label for="age">Âge</label>
+            <input  class="width"  type="number" name="age" id="age" >
+            
+            <br><br><label for="NATIONNALITE"> NATIONNALITE:</label><br>
+            <input  class="width" type="text" name="nationnalite" id="NATIONNALITE" placeholder="votre nationnalite" required>
+            <br><br><label for="residance">LIEU DE RESIDANCE:</label><br>
+            <input  class="width"  type="text" name="residance" id="residance" placeholder="votre residance" required>
+             <br><p>SEXE</p>
+             <input  type="radio" value="MASCULIN" id="man" name="sex" required>
+            <label for="man">MASCULIN</label> <br><br>
+            <input type="radio" value="FEMININ" id="woman" name="sex" required>
+            <label for="woman">FEMININ</label> <br><br>
+            <label for="permis">Joindre votre permis</label> <br><br>
+            <input type="file" name="perm" id="permis" placeholder="oindre votre permis" accept="application/pdf" required>
+            <h2>commune d'activité</h2><br>
+            
+             <select name="commune" id="" >
+                <option value="commune" name="commune">------</option>
+                 <option value="commune" name="commune">COCODY</option>
+                 <option value="commune" name="commune">YOPOUGON</option>
+                 <option value="commune" name="commune">KOUMASSI</option>
+                 <option value="commune" name="commune">MARCORY</option>
+                 <option value="commune" name="commune">BINGERVILLE</option>
+                 <option value="commune" name="commune">ABOBO</option>
+                 <option value="commune" name="commune">ANYAMA</option>
+                 <option value="commune" name="commune">ADJAME</option>
+                 <option value="commune" name="commune">ATTECOUBE</option>
+                 <option value="commune" name="commune">PLATEAU</option>
+                 <option value="commune" name="commune">PORT-BOUËT</option>
+                 <option value="commune" name="commune">TREICHVILLE</option>
+             </select>
+             <!-- information sur le taxi -->
+            <h2>À propos du taxi</h2>
+            <label for="matricule">Immatriculation</label><br>
+            <input class="width" type="text" name="Immatriculation" id="matricule" placeholder="N°matricule " required><br><br><br>
+            <label for="maque">Maque de taxis</label><br>
+            <input class="width" type="text" name="maque" placeholder="Maque de véhicule " required><br><br>
+            <br><br>
+        <input type="submit" value="Confirmez">
+        </fieldset>
+    </form> 
+</body>
+</html>
